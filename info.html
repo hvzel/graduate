@@ -321,11 +321,13 @@
 
     <script>
         function menu(elem) {
-            var b = document.querySelectorAll('[for=' + elem + ']');
-            for (var i = 0; i < b.length; i++) {
-                b[i].classList.remove('active')
+            var a = document.querySelectorAll('[for=' + elem + ']')[0];
+            var clear = document.querySelectorAll('#header label');
+            for (var i = 0; i < clear.length; i++) {
+                clear[i].classList.remove('active')
             }
-            b.classList.add('active');
+            a.classList.add('active');
+            console.log(elem, '[for=' + elem + ']', a);
         }
     </script>
 </body>

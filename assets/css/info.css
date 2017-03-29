@@ -49,8 +49,8 @@ body {
     border-bottom: 1px solid #b7b7b7;
     -webkit-animation-name: glavnaya;
     animation-name: glavnaya;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     ;
 }
 
@@ -67,8 +67,8 @@ body {
     text-align: left;
     -webkit-animation-name: weather;
     animation-name: weather;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }
@@ -202,8 +202,8 @@ body {
     background-size: cover;
     -webkit-animation-name: area;
     animation-name: area;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }
@@ -356,8 +356,9 @@ th {
     -o-transform: scale(1.4);
 }
 
-.active:focus {
-    background-color: red;
+#header .active {
+    background-color: rgba(206, 206, 206, 0.8);
+    box-shadow: 0 0 15px rgba(214, 214, 214, 0.5);
 }
 
 @media all and (min-width: 650px) and (max-width:900px) {
@@ -420,8 +421,8 @@ th {
         display: none;
     }
     #areaimg {
-    width: 300px;
-}
+        width: 300px;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 450px) {
@@ -491,6 +492,6 @@ th {
         display: none;
     }
     #areaimg {
-    width: 300px;
-}
+        width: 300px;
+    }
 }

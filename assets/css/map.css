@@ -453,10 +453,10 @@ a:hover {
     cursor: pointer;
 }
 
-@media all and (min-width: 600px) and (max-width: 850px) {
+@media all and (min-width: 600px) and (max-width: 1000px) {
     .mapimg {
-        width: 80vh;
-        height: 80vh;
+        width: 80vw;
+        height: 80vw;
         top: 35px;
         left: calc(50vw - 34vw);
     }
@@ -513,8 +513,8 @@ a:hover {
 
 @media all and (min-width: 400px) and (max-width: 600px) {
     .mapimg {
-        width: 70vh;
-        height: 70vh;
+        width: 70vw;
+        height: 70vw;
         top: 30px;
         left: calc(50vw - 40vw);
     }
@@ -571,8 +571,8 @@ a:hover {
 
 @media all and (min-width: 0px) and (max-width: 400px) {
     .mapimg {
-        width: 50vh;
-        height: 60vh;
+        width: 50vw;
+        height: 60vw;
         top: 30px;
         left: calc(50vw - 43vw);
     }
