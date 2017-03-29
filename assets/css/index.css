@@ -1,0 +1,129 @@
+    @font-face {
+    font-family: "Humblle";
+    src: url(../fonts/Humblle.ttf)
+  }
+  
+  body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  .footer {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: calc(100% - 30px);
+    z-index: 3;
+  }
+  
+  .footer>p {
+    font-size: 20px;
+    margin: 0px;
+  }
+  
+  .vhod {
+    width: 720px;
+    height: 150px;
+    font-family: "Humblle";
+    background-color: rgba(50, 50, 50, 0.5);
+    font-size: 80px;
+    color: white;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    top: 40vh;
+    left: calc(50vw - 360px);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .content {
+    width: 100%;
+    height: calc(100vh - 20px);
+  }
+  
+  #hand {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    top: calc(40vh + 160px);
+    left: calc(50vw - 60px);
+    z-index: 2;
+  }
+  
+  .video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #trailer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  #trailer>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  @media all and (min-width: 480px) and (max-width: 750px) {
+    .vhod {
+      width: 400px;
+      height: 210px;
+      font-size: 60px;
+      top: 25vh;
+      left: calc(50vw - 200px);
+    }
+    #hand {
+      width: 120px;
+      height: 120px;
+      display: block;
+      top: calc(25vh + 220px);
+      margin: auto;
+    }
+  }
+  
+  @media all and (min-width: 0px) and (max-width: 480px) {
+    .video {
+      overflow: hidden;
+    }
+    .vhod {
+      width: 250px;
+      height: 135px;
+      font-size: 40px;
+      top: 30vh;
+      left: calc(50vw - 125px);
+    }
+    #hand {
+      width: 120px;
+      height: 120px;
+      display: block;
+      top: calc(30vh + 130px);
+      margin: auto;
+    }
+    #fon {
+      width: 100vh;
+      height: 100vh
+    }
+  }

@@ -1,0 +1,496 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url(../fonts/Lobster-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Australia";
+    src: url(../fonts/Australia.otf)
+}
+
+@font-face {
+    font-family: "text";
+    src: url(../fonts/text.ttf)
+}
+
+@font-face {
+    font-family: "footer";
+    src: url(../fonts/footer.ttf)
+}
+
+@font-face {
+    font-family: "span";
+    src: url(../fonts/span.otf)
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100%;
+}
+
+.kartinka {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    font-family: "Australia";
+    color: white;
+    text-align: center;
+    background: url('../img/header.jpg') no-repeat bottom left;
+    background-size: cover;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b7b7b7;
+    -webkit-animation-name: glavnaya;
+    animation-name: glavnaya;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    ;
+}
+
+.kartinka>p {
+    margin-top: 0px;
+    position: relative;
+    top: 60px;
+    font-size: 100px;
+}
+
+.kartinka_weather {
+    background: url('../img/weather.jpg') no-repeat;
+    background-size: cover;
+    text-align: left;
+    -webkit-animation-name: weather;
+    animation-name: weather;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes glavnaya {
+    0% {
+        top: -70vh;
+        opacity: 0;
+    }
+    50% {
+        top: 0vh;
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glavnaya {
+    0% {
+        top: -70vh;
+        opacity: 0;
+    }
+    50% {
+        top: 0vh;
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes weather {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    83% {
+        left: 20vw;
+        opacity: 1;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+@keyframes weather {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    83% {
+        left: 20vw;
+        opacity: 1;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+@-webkit-keyframes people {
+    0% {
+        top: -70vh;
+        opacity: 0;
+    }
+    100% {
+        top: 0vw;
+        opacity: 1;
+    }
+}
+
+@keyframes people {
+    0% {
+        top: -70vh;
+        opacity: 0;
+    }
+    100% {
+        top: 0vw;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes area {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    85% {
+        left: 25vw;
+        opacity: 1;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+@keyframes area {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    85% {
+        left: 25vw;
+        opacity: 1;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+.kartinka_weather>p {
+    margin-top: 0px;
+    margin-left: 5vw;
+    position: absolute;
+    top: 60px;
+    color: #d1983c;
+    font-size: 80px;
+}
+
+.kartinka_people {
+    background: url('../img/people.jpg') no-repeat center top;
+    background-size: cover;
+    -webkit-animation-name: people;
+    animation-name: people;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.kartinka_area {
+    background: url('../img/area.jpg') no-repeat center bottom;
+    background-size: cover;
+    -webkit-animation-name: area;
+    animation-name: area;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+}
+
+#header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-color: #f2f2f2;
+    z-index: 5;
+    position: fixed;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+#header label {
+    display: inline-block;
+    height: 47px;
+    width: 185px;
+    padding: 13px 0px 0px 0px;
+    text-align: center;
+    font-family: "Lobster-Regular";
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    /* Standard syntax */
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+input {
+    display: none;
+}
+
+#header label:hover {
+    cursor: pointer;
+    background-color: rgba(196, 196, 196, 0.4);
+    box-shadow: 0 0 15px rgba(214, 214, 214, 0.5);
+    font-size: 25px;
+}
+
+.JustifyContent {
+    /*Блок с информацией*/
+    width: 75%;
+    margin: auto;
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "text";
+}
+
+.Australiatext {
+    /*Шрифт для "Австралия"*/
+    font-family: "span";
+    font-size: 20px;
+}
+
+#flagimg,
+#areaimg {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.imgfloatleft {
+    float: left;
+}
+
+.imgfloatright {
+    float: right;
+}
+
+#klimatimg {
+    float: right;
+    margin: 0px 0px 10px 15px;
+}
+
+#svyaz>img {
+    margin: 0px 7px;
+}
+
+.footer>p {
+    display: block;
+    margin: 5px;
+    font-family: "footer";
+    font-size: 20px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.zagolovok {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+#areaimg {
+    width: 400px;
+}
+
+input+div {
+    display: none;
+}
+
+input:checked+div {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d3d3d3;
+    margin: auto;
+    min-height: 300px;
+    min-width: 670px;
+}
+
+td,
+th {
+    text-align: center;
+    font-size: 17px;
+    font-family: "text";
+    border: #d3d3d3 solid red;
+    text-indent: 0px;
+}
+
+.scaleimg {
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    -webkit-transition: all 0.8s ease-out;
+}
+
+.scaleimg:hover {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+.active:focus {
+    background-color: red;
+}
+
+@media all and (min-width: 650px) and (max-width:900px) {
+    td,
+    th {
+        font-size: 16px;
+    }
+    .cl {
+        display: none;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 650px) {
+    #header label {
+        display: block;
+        height: 45px;
+        width: 150px;
+        padding: 15px 0px 0px 0px;
+        text-align: center;
+        font-size: 17px;
+    }
+    #plane {
+        display: none;
+    }
+    #header label {
+        transition: none;
+    }
+    #header label:hover {
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .kartinka>p {
+        position: relative;
+        top: 60px;
+        font-size: 55px;
+    }
+    .zagolovok {
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+    }
+    .Australiatext {
+        /*Шрифт для "Австралия"*/
+        font-size: 18px;
+    }
+    .JustifyContent {
+        width: 85%;
+        margin: auto;
+        font-size: 18px;
+    }
+    table {
+        min-height: 300px;
+        min-width: 400px;
+    }
+    td,
+    th {
+        font-size: 14px;
+    }
+    .cl {
+        display: none;
+    }
+    #areaimg {
+    width: 300px;
+}
+}
+
+@media all and (min-width: 0px) and (max-width: 450px) {
+    #header {
+        height: 200px;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(242, 242, 242, 0.3);
+        border: none;
+    }
+    #header label {
+        display: inline-block;
+        height: 40px;
+        text-align: left;
+        width: 100%;
+        padding: 5px 0px 0px 0px;
+        font-size: 19px;
+        border-bottom: 1px solid #b7b7b7;
+    }
+    .kartinka>p {
+        display: none;
+    }
+    .kartinka {
+        height: 200px;
+        border: none;
+        opacity: 0.9;
+    }
+    .zagolovok {
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+    }
+    .JustifyContent {
+        width: 85%;
+        margin: auto;
+        font-size: 16px;
+    }
+    .Australiatext {
+        /*Шрифт для "Австралия"*/
+        font-size: 16px;
+    }
+    .scaleimg {
+        float: none;
+        margin-bottom: 5px;
+        -moz-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+    }
+    .scaleimg:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+    }
+    table {
+        min-height: 300px;
+        min-width: 350px;
+    }
+    td,
+    th {
+        font-size: 12px;
+    }
+    .cl {
+        display: none;
+    }
+    #areaimg {
+    width: 300px;
+}
+}
