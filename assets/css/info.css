@@ -340,7 +340,7 @@ th {
     text-align: center;
     font-size: 17px;
     font-family: "text";
-    border: #d3d3d3 solid red;
+    border: #d3d3d3 solid 1px;
     text-indent: 0px;
 }
 
@@ -359,16 +359,6 @@ th {
 #header .active {
     background-color: rgba(206, 206, 206, 0.8);
     box-shadow: 0 0 15px rgba(214, 214, 214, 0.5);
-}
-
-@media all and (min-width: 650px) and (max-width:900px) {
-    td,
-    th {
-        font-size: 16px;
-    }
-    .cl {
-        display: none;
-    }
 }
 
 @media all and (min-width: 450px) and (max-width: 650px) {
@@ -416,9 +406,6 @@ th {
     td,
     th {
         font-size: 14px;
-    }
-    .cl {
-        display: none;
     }
     #areaimg {
         width: 300px;
@@ -480,18 +467,41 @@ th {
         -moz-transform: none;
         -o-transform: none;
     }
-    table {
-        min-height: 300px;
-        min-width: 350px;
-    }
-    td,
-    th {
-        font-size: 12px;
-    }
-    .cl {
-        display: none;
-    }
     #areaimg {
         width: 300px;
+    }
+    table {
+        border: 0;
+
+    }
+    table caption {
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        width: 40%;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        display: block;
+        margin-bottom: 0.625em;
+    }
+    table tr:last-child {
+        border-bottom: none;
+    }
+    table td {
+        width: 40%;
+        border: #d3d3d3 solid 1px;
+        display: block;
+        text-align: right;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    table td:first-child {
+        font-weight: bold;
     }
 }
